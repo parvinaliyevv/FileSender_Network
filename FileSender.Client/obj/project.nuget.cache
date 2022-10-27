@@ -1,0 +1,11 @@
+{
+  "version": 2,
+  "dgSpecHash": "Bg4i9WECSgxC7MrTjy7rMrPRtAN4uC8ruVdIfiqUbzCQjIU8IO7pYLQuxGFO6uJflbyyWpVhCVhIIBUZIdubDQ==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\HP\\source\\repos\\FileSender\\FileSender.Client\\FileSender.Client.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\HP\\.nuget\\packages\\materialdesigncolors\\2.0.9\\materialdesigncolors.2.0.9.nupkg.sha512",
+    "C:\\Users\\HP\\.nuget\\packages\\materialdesignthemes\\4.6.1\\materialdesignthemes.4.6.1.nupkg.sha512"
+  ],
+  "logs": []
+}

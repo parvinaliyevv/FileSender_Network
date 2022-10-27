@@ -1,0 +1,34 @@
+﻿<UserControl x:Class="FileSender.Client.Views.UserControls.FileBox"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
+             FontFamily="Comic Sans MS" FontSize="24"
+             d:DesignHeight="450" d:DesignWidth="800" mc:Ignorable="d" >
+
+    <StackPanel Margin="0, 0, 0, 50">
+
+        <Label Content="{materialDesign:PackIcon Kind=FileSendOutline, Size=70}" Foreground="#003171" HorizontalAlignment="Center"/>
+
+        <StackPanel HorizontalAlignment="Center" Orientation="Horizontal">
+            <TextBlock Text="Name: "/>
+            <TextBlock Text="{Binding Filename}"/>
+        </StackPanel>
+
+        <StackPanel HorizontalAlignment="Center" Orientation="Horizontal">
+            <TextBlock Text="Extension: "/>
+            <TextBlock Text="{Binding Extension}"/>
+        </StackPanel>
+
+        <StackPanel HorizontalAlignment="Center" Orientation="Horizontal">
+            <TextBlock Text="Length: "/>
+            <TextBlock Text="{Binding Length}"/>
+            <TextBlock Text="{Binding LengthType}"/>
+        </StackPanel>
+
+        <ProgressBar Value="{Binding Value}" Maximum="{Binding MaximumValue}" Foreground="#003171" Background="#3574c7e0" Height="10" Width="300" Margin="0, 30, 0, 0"/>
+
+    </StackPanel>
+
+</UserControl>
