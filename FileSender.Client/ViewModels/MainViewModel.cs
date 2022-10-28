@@ -110,8 +110,6 @@ public class MainViewModel : DependencyObject
 
         dispatcher.Invoke(() => FileBox.Value = default);
 
-        ProcessStarted = true;
-
         if (!File.Exists(FilePath))
         {
             dispatcher.InvokeAsync(() => Logs.Add(string.Format("{0}: File not found.", DateTime.Now.ToShortTimeString()))); return;
@@ -120,6 +118,8 @@ public class MainViewModel : DependencyObject
         {
             dispatcher.InvokeAsync(() => Logs.Add(string.Format("{0}: Sending file started.", DateTime.Now.ToShortTimeString())));
         }
+        
+        ProcessStarted = true;
 
         //////////////////////////////////////////////////////////////////////////////////////////
 
